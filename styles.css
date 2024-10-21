@@ -1,0 +1,223 @@
+/* Reset de estilo básico */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos internos padrão */
+    box-sizing: border-box; /* Inclui as bordas e o padding no cálculo das larguras */
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para o texto */
+    line-height: 1.6; /* Define o espaçamento entre as linhas do texto */
+}
+
+/* Container geral */
+.container {
+    width: 80%; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Cabeçalho */
+header {
+    background: #333; /* Define a cor de fundo do cabeçalho */
+    color: #fff; /* Define a cor do texto no cabeçalho */
+    padding: 20px 0; /* Adiciona espaçamento interno vertical no cabeçalho */
+    text-align: center; /* Centraliza o conteúdo dentro do cabeçalho */
+}
+
+header h1 {
+    margin-bottom: 10px; /* Espaçamento inferior no título do cabeçalho */
+}
+
+/* Navegação (menu) */
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens da lista horizontalmente */
+    margin-right: 20px; /* Espaçamento à direita entre os itens do menu */
+}
+
+nav ul li a {
+    color: #fff; /* Cor do texto nos links do menu */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Seções gerais */
+section {
+    padding: 60px 0; /* Adiciona espaçamento interno vertical nas seções */
+    text-align: center; /* Centraliza o conteúdo nas seções */
+}
+
+/* Itens do portfólio */
+#portfolio .portfolio-item {
+    display: inline-block; /* Exibe os itens como blocos em linha */
+    margin: 20px; /* Espaçamento ao redor dos itens do portfólio */
+}
+
+#portfolio .portfolio-item img {
+    width: 300px; /* Define a largura das imagens do portfólio */
+    height: auto; /* Mantém a proporção das imagens */
+    display: block; /* Faz com que a imagem seja um bloco (eliminando espaços indesejados) */
+    border-radius: 5px;
+
+}
+
+/* Rodapé */
+footer {
+    background: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    text-align: center; /* Centraliza o conteúdo no rodapé */
+    padding: 20px 0; /* Adiciona espaçamento interno vertical no rodapé */
+    margin-top: 40px; /* Espaçamento superior entre o rodapé e o conteúdo acima */
+}
+
+/* Links das redes sociais no rodapé */
+footer .social-links a {
+    color: #fff; /* Cor dos links de redes sociais no rodapé */
+    margin-right: 15px; /* Espaçamento à direita entre os links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+footer .social-links a:hover {
+    text-decoration: underline; /* Sublinha os links ao passar o mouse */
+}
+
+/* Botões do portfólio */
+.portfolio-btn {
+    display: inline-block; /* Exibe o botão em linha como um bloco */
+    margin-top: 10px; /* Espaçamento superior do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #333; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado do texto do botão */
+    border-radius: 5px; /* Bordas arredondadas no botão */
+    transition: background-color 0.3s ease; /* Efeito suave ao mudar a cor do botão */
+}
+
+.portfolio-btn:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse no botão */
+}
+
+/* Estilos da seção "Sobre Mim" */
+#about {
+    padding: 60px 0; /* Adiciona espaçamento interno vertical */
+    background-color: #f4f4f4; /* Cor de fundo clara */
+
+}
+
+/* Container flexível na seção "Sobre Mim" */
+.about-container {
+    display: flex; /* Define o layout flexível */
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Espaço entre os itens de forma equilibrada */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+}
+
+/* Texto da seção "Sobre Mim" */
+.about-text {
+    flex: 1; /* O texto ocupa 50% do espaço disponível */
+    padding-right: 20px; /* Espaçamento à direita do texto */
+    text-align: justify;
+}
+
+/* Imagem na seção "Sobre Mim" */
+.about-image {
+    flex: 1; /* A imagem ocupa 50% do espaço disponível */
+    text-align: right; /* Alinha a imagem à direita */
+}
+
+.about-image img {
+    width: 80%; /* A largura da imagem é ajustada para 80% do container */
+    border-radius: 10px; /* Bordas arredondadas da imagem */
+    max-width: 300px; /* Limite da largura máxima da imagem */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Empilha o texto e a imagem verticalmente em telas menores */
+        text-align: center; /* Centraliza o texto e a imagem */
+    }
+
+    .about-image {
+        text-align: center; /* Centraliza a imagem */
+        margin-top: 20px; /* Espaçamento superior para a imagem */
+        
+    }
+
+    .about-image img {
+        width: 50%; /* Reduz a largura da imagem em telas menores */
+    }
+}
+
+/* Reset de estilo básico */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos internos padrão */
+    box-sizing: border-box; /* Inclui as bordas e o padding no cálculo das larguras */
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para o texto */
+    line-height: 1.6; /* Define o espaçamento entre as linhas do texto */
+}
+
+/* Container geral */
+.container {
+    width: 80%; /* Define a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+
+/* Estilos para o Accordion = guias retrateis */
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.accordion-headerpowerb {
+    width: 100%;
+    background-color: #3300ff;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    border-radius:10px ;
+}
+
+.accordion-header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    border-radius:10px ;
+}
+.accordion-header:hover {
+    background-color: #555;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none; /* O conteúdo começa oculto */
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.accordion-content p {
+    margin: 0;
+}
