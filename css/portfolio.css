@@ -1,0 +1,73 @@
+/* Item de portfólio geral */
+#portfolio .portfolio-item {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+    background-color: #ede9e9; 
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Aumenta o arredondamento */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    text-align: center; /* Centraliza o conteúdo */
+    max-width: 320px; /* Define uma largura máxima */
+    max-height: 600px;
+   
+}
+
+
+/* Título do projeto */
+.portfolio-item h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Imagem do projeto */
+#portfolio .portfolio-item img {
+    width: 100%; /* Torna a imagem responsiva */
+    max-width: 300px; /* Define uma largura máxima */
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Descrição do projeto */
+.portfolio-item p {
+    font-size: 1em;
+    color: #666;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+/* Ferramentas usadas (texto) */
+.tools-used {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.tools-used span {
+    font-size: 0.9em;
+    color: #666;
+    background-color: #f1eded;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+
+/* Botão do portfólio */
+.portfolio-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #353535;
+    color: #f6efef;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-btn:hover {
+    background-color: #555;
+}

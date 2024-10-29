@@ -1,0 +1,72 @@
+/* Estilo geral do cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 50px;
+    position: fixed; /* Fixa o cabeçalho */
+    top: 0; /* Posiciona-o no topo */
+    width: 100%; /* Expande para a largura total */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+
+/* Estilo do título */
+#title {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.0;
+    align-items: left;
+    padding: 5px;
+  
+}
+
+#title h1 {
+    margin: 0;
+}
+
+/* Estilo do menu de navegação */
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+header ul li {
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul a:hover {
+    color: rgb(111, 72, 190);
+    transition: color 0.3s ease;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Altera para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    header ul {
+        flex-direction: row; /* Empilha os itens verticalmente */
+        margin-top: 15px; /* Espaço entre o título e o menu */
+    }
+
+    header ul li {
+        margin: px 0; /* Espaçamento vertical entre os itens do menu */
+    }
+}
+

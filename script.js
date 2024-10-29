@@ -1,17 +1,17 @@
 // Seleciona todos os botões de cabeçalho do accordion
-var acc = document.getElementsByClassName("accordion-headerpowerb");
+var acc = document.getElementsByClassName("accordion-header");
 
 for (var i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-        // Alterna a classe 'active' para o botão clicado
         this.classList.toggle("active");
 
-        // Alterna entre exibir e ocultar o conteúdo do accordion
         var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
+        content.classList.toggle("open");
+
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
         } else {
-            content.style.display = "block";
+            content.style.maxHeight = content.scrollHeight + "px";
         }
     });
 }

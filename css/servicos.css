@@ -1,0 +1,64 @@
+/* Estilos para a seção Serviços */
+#services {
+    background-color: #f8f9fa; /* Cor de fundo suave */
+    padding: 40px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+#services h2 {
+    font-size: 2em; /* Tamanho da fonte para o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #333; /* Cor do texto do título */
+}
+
+#services p {
+    font-size: 1.1em; /* Tamanho da fonte para a descrição */
+    color: #666; /* Cor do texto da descrição */
+    margin-bottom: 30px; /* Espaço abaixo da descrição */
+    max-width: 800px; /* Limita a largura da descrição */
+    margin-left: auto; /* Centraliza o parágrafo */
+    margin-right: auto; /* Centraliza o parágrafo */
+}
+
+#services ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove preenchimento padrão */
+    display: flex; /* Alinha os itens em linha */
+    flex-wrap: wrap; /* Permite quebrar a linha se necessário */
+    justify-content: center; /* Centraliza os itens */
+}
+
+#services ul li {
+    background-color: #fff; /* Fundo branco para os itens da lista */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 15px; /* Espaçamento interno dos itens */
+    margin: 10px; /* Espaçamento entre os itens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    transition: transform 0.3s; /* Efeito suave ao passar o mouse */
+    flex: 0 1 calc(25% - 20px); /* Define a largura dos blocos (4 itens por linha) */
+    max-width: calc(25% - 20px); /* Limita a largura máxima dos blocos */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+#services ul li:hover {
+    transform: translateY(-5px); /* Levanta o item ao passar o mouse */
+}
+
+#services ul li strong {
+    color: #333; /* Cor do texto em negrito */
+}
+
+/* Ajusta a responsividade */
+@media (max-width: 768px) {
+    #services ul li {
+        flex: 0 1 calc(50% - 20px); /* 2 itens por linha em telas menores */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    #services ul li {
+        flex: 0 1 100%; /* 1 item por linha em telas muito pequenas */
+        max-width: 100%;
+    }
+}
