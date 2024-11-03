@@ -4,35 +4,58 @@
     background-color: #333;
     color: #fff;
     padding: 15px;
-    text-align: left;
     cursor: pointer;
     border: none;
-    outline: none;
     font-size: 18px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-header:hover {
+    background-color: #444;
+}
+
+.accordion-header:focus {
+    outline: 3px solid #888;
 }
 
 .accordion-header.active {
     background-color: #555;
+    transform: scale(1.02);
 }
 
 .accordion-content {
-    max-height: 0; /* Define a altura inicial como zero para o efeito de transição */
-    overflow: hidden; /* Oculta o conteúdo que excede o limite de altura */
+    max-height: 0;
+    overflow: hidden;
     background-color: #f9f9f9;
-    border-top: 5px solid #ddd;
-    padding: 0px 15px; /* Define o padding horizontal */
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Efeito suave */
+    border-top: 2px solid #ddd;
+    padding: 0 15px;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
     font-size: 16px;
-    margin-bottom: 5px; /* Espaço entre os headers */
-    border-radius: 15px;
+    margin-bottom: 8px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .accordion-content p {
-    margin: 10px 0; /* Define uma margem entre parágrafos */
+    margin: 10px 0;
 }
 
-.accordion-header:hover {
-    background-color: #555;
+/* Para exibir o conteúdo quando ativo */
+.accordion-content.open {
+    padding: 0px;
+}
+
+/* Ícone de seta indicando expansão */
+.accordion-header::after {
+    content: '\25BC'; /* Seta para baixo */
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.active::after {
+    transform: rotate(180deg); /* Rotaciona a seta para cima */
 }
