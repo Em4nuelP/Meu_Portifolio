@@ -1,0 +1,160 @@
+/* Container do carrossel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Esconde os itens fora da tela */
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/* Contêiner para os itens do carrossel */
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease; /* Animação ao deslizar */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin: 0;
+}
+
+/* Cada item do carrossel (Card) */
+.portfolio-item {
+    flex: 0 0 calc(25% - 20px); /* Exibe 4 itens, considerando o gap entre eles */
+    box-sizing: border-box;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+/* Card */
+.card {
+    border-radius: 25px;
+    background-color: #FFF;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteúdo da imagem */
+.image-content {
+    position: relative;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070F4;
+    border-radius: 25px 25px 0 25px;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #FFF;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070F4;
+}
+
+/* Conteúdo do card (Texto) */
+.card-content {
+    padding: 10px 14px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.button {
+    font-size: 16px;
+    color: #FFF;
+    background-color: #4070F4;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #265DF2;
+}
+
+/* Botões de navegação do carrossel */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas grandes (4 itens visíveis) */
+@media (min-width: 1200px) {
+    .portfolio-item {
+        flex: 0 0 calc(25% - 20px); /* 4 itens visíveis por vez */
+    }
+}
+
+/* Telas médias (3 itens visíveis) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .portfolio-item {
+        flex: 0 0 calc(33.33% - 20px); /* 3 itens visíveis por vez */
+    }
+}
+
+/* Telas pequenas (2 itens visíveis) */
+@media (max-width: 767px) {
+    .portfolio-item {
+        flex: 0 0 calc(50% - 20px); /* 2 itens visíveis por vez */
+    }
+}
+
+/* Telas muito pequenas (1 item visível) */
+@media (max-width: 480px) {
+    .portfolio-item {
+        flex: 0 0 calc(100% - 20px); /* 1 item visível por vez */
+    }
+}
