@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     overflow: hidden; /* Esconde os itens fora da tela */
-    max-width: 1120px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -12,7 +12,7 @@
     display: flex;
     transition: transform 0.5s ease; /* Animação ao deslizar */
     gap: 20px; /* Espaçamento entre os itens */
-    margin: 0;
+    margin: 10px;
 }
 
 /* Cada item do carrossel (Card) */
