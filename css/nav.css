@@ -3,28 +3,30 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
-    color: #fff;
-    padding: 5px 50px;
+    background-color: #fff; /* Fundo branco */
+    color: #333; /* Texto escuro */
+    padding: 10px 50px; /* Espaçamento interno reduzido */
     position: fixed; /* Fixa o cabeçalho */
     top: 0; /* Posiciona-o no topo */
     width: 100%; /* Expande para a largura total */
     z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-bottom: 1px solid #e0e0e0; /* Linha fina na parte inferior */
 }
-
 
 /* Estilo do título */
 #title {
     display: flex;
     flex-direction: column;
-    line-height: 1.0;
-    align-items: left;
-    padding: 5px;
-  
+    line-height: 1.2; /* Espaçamento entre linhas ajustado */
+    align-items: flex-start; /* Alinhamento à esquerda */
 }
 
 #title h1 {
     margin: 0;
+    font-size: 24px; /* Tamanho da fonte reduzido */
+    font-weight: 600; /* Peso da fonte médio */
+    color: #333; /* Cor do texto escuro */
 }
 
 /* Estilo do menu de navegação */
@@ -33,23 +35,22 @@ header ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    
 }
 
 header ul li {
-    margin: 0 15px;
+    margin: 0 20px; /* Espaçamento horizontal entre os itens */
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500; /* Peso da fonte médio */
 }
 
 header ul a {
-    color: #fff;
+    color: #333; /* Cor do texto escuro */
     text-decoration: none;
+    transition: color 0.3s ease; /* Transição suave de cor */
 }
 
 header ul a:hover {
-    color: rgb(111, 72, 190);
-    transition: color 0.3s ease;
+    color: #007BFF; /* Azul suave ao passar o mouse */
 }
 
 /* Estilos responsivos */
@@ -58,15 +59,19 @@ header ul a:hover {
         flex-direction: column; /* Altera para coluna em telas menores */
         align-items: center; /* Centraliza os itens */
         text-align: center; /* Centraliza o texto */
+        padding: 10px 20px; /* Reduz o padding em telas menores */
+    }
+
+    #title {
+        align-items: center; /* Centraliza o título em telas menores */
     }
 
     header ul {
-        flex-direction: row; /* Empilha os itens verticalmente */
-        margin-top: 15px; /* Espaço entre o título e o menu */
+        flex-direction: row; /* Mantém os itens em linha */
+        margin-top: 10px; /* Espaço entre o título e o menu */
     }
 
     header ul li {
-        margin: px 0; /* Espaçamento vertical entre os itens do menu */
+        margin: 0 10px; /* Reduz o espaçamento entre os itens */
     }
 }
-

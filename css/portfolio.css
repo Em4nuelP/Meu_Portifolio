@@ -11,8 +11,8 @@
 /* Item de Portfólio */
 #portfolio .portfolio-item {
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 15px;
+
+    border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -28,17 +28,19 @@
 
 /* Título do projeto */
 .portfolio-item h1 {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 10px;
     color: #333;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Imagem do projeto */
 #portfolio .portfolio-item img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    margin: 10px 0;
+    border-radius: 10px 10px 0 0;
+    margin: 0px 0;
 }
 
 /* Descrição do projeto */
@@ -47,6 +49,8 @@
     color: #666;
     margin: 15px 0;
     text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Ferramentas usadas (texto) */
@@ -68,7 +72,7 @@
 /* Botão do Portfólio */
 .portfolio-btn {
     display: inline-block;
-    margin-top: 10px;
+    margin: 10px;
     padding: 10px 20px;
     background-color: #353535;
     color: #f6efef;
